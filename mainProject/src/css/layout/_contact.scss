@@ -1,0 +1,104 @@
+.contact{
+    margin-top: 2 * $size-space;
+    
+    &__logo{
+        width: 150px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__content{
+        div{
+            margin-bottom: $size-space;
+            color: $color-detail;
+        }
+        .fas{
+            margin-right: $size-space_small;
+        }
+    }
+
+    &__follow{
+        margin: 2 * $size-space 0;
+        a{
+            color: $color-detail;
+            padding: 3px;
+        }
+    }
+
+    &__title{
+        color: $color-detail;
+        margin-bottom: $size-space_small;
+    }
+
+    &_form{
+        margin: 2 * $size-space 0;
+
+        form{
+            div{
+                overflow: hidden;
+                margin-bottom: $size-space;
+
+                &.contact__btn{
+                    padding-left: 21%;
+                }
+            }
+
+            span{
+                float: left;
+                width: 20%;
+            }
+
+            input,textarea{
+                padding: 4px 8px;
+                border: 1px solid $color-time;
+                float: right;
+                width: 79%;
+                background-color: $color-border;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 480px){
+    .contact{
+        &_map{
+            iframe{
+                height: 360px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px){
+    .contact{
+        &_map{
+            iframe{
+                height: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        
+        &_map{
+            flex-basis: 72%;
+            iframe{
+                height: 400px;
+            }
+        }
+
+        &_address{
+            flex-basis: 26%;
+        }
+
+        &_form{
+            width: 72%;
+        }
+    }
+}

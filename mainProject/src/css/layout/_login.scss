@@ -1,0 +1,57 @@
+.login{
+    margin-bottom: 2 * $size-space;
+
+    &__heading{
+        @include flex;
+        margin-bottom: $size-space;
+    }
+
+    &__title{
+        font-size: $size-title;
+        color: $color-black;
+    }
+
+    &__desc{
+        font-size: $size-detail;
+        color: $color-black;
+        margin: 2 * $size-space 0;
+    }
+
+    form{
+        div{
+            margin-bottom: 2 * $size-space;
+
+            &:nth-child(1),&:nth-child(2){
+                @include flex;
+
+                label{
+                    flex-basis: 20%
+                }
+
+                input{
+                    flex-basis: 78%;
+                    padding: $size-space_small $size-space;
+                    border: 1px solid $color-border;
+                }
+            }
+
+            &:nth-child(3),&:nth-child(4){
+               padding-left: 22%;
+            }
+
+            label,p{
+                color: $color-black;
+                font-size: $size-detail;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .login{
+        &__content{
+            border: 1px solid $color-border;
+            padding: 5 * $size-space;
+        }
+    }
+}

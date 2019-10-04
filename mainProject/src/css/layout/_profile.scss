@@ -1,0 +1,60 @@
+.form{
+    @include flex;
+    margin-top: 2 * $size-space;
+
+    &__one,&__two,&__three,&__four{
+        width: 49%;
+
+        div{
+            overflow: hidden;
+            margin-bottom: 1.5 * $size-space;
+        }
+
+        span{
+            float: left;
+            width: 20%;
+        }
+
+        input{
+            float: right;
+            width: 79%;
+            padding: 4px 8px;
+        }
+    }
+
+    &__three,&__four{
+        margin-top: 2 * $size-space;
+        border-top: 1px solid $color-border;
+        padding-top: 2 * $size-space;
+
+        input{
+            border: none;
+        }
+
+        .form__link{
+            text-align: right;
+        }
+    }
+
+    &__title{
+        margin-bottom: 1.5 * $size-space;
+    }
+
+    &__link{
+        a{
+            text-decoration: underline;
+            color: $color-blue;
+        }
+    }
+
+    &__btn{
+        text-align: right;
+
+        .btn__cart{
+            &:first-child{
+                background-color: $color-blue;
+                margin-right: $size-space;
+            }
+        }
+    }
+}

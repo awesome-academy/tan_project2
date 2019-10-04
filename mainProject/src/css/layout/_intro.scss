@@ -1,0 +1,38 @@
+.intro{
+    margin: 2 * $size-space 0;
+    img{
+        width: 100%;
+    }
+
+    &__title{
+        font-size: 24px;
+        color: $color-light_black;
+        margin-bottom: 1.5 * $size-space;
+        margin-top: 2 * $size-space;
+    }
+
+    &__detail{
+        font-size: $size-detail;
+        color: $color-detail;
+        line-height: 1.1;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .intro{
+        display: flex;
+        justify-content: space-between;
+
+        &__img{
+            flex-basis: 40%;
+        }
+
+        &__content{
+            flex-basis: 58%;
+        }
+
+        &__title{
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,144 @@
+.order{
+    display: flex;
+    flex-direction: column;
+    margin: 2 * $size-space 0;
+
+    &_table{
+        order: 1;
+    }
+    &__heading{
+        background-color: $color-border;
+        border: 1px solid $color-light_time;
+        border-bottom: none;
+        padding: 2 * $size-space $size-space;
+        margin-top: 2 * $size-space;
+    }
+
+    &__title{
+        font-size: $size-title;
+        color: $color-light_black;
+    }
+
+    &__desc{
+        font-size: $size-detail;
+        color: $color-light_black;
+        margin-top: $size-space;
+    }
+
+    &_customer{
+        background-color: $color-border;
+        border: 1px solid $color-light_time;
+        padding: 1.5 * $size-space;
+
+        >div{
+            overflow: hidden;
+            margin-top: $size-space_small;
+        }
+    }
+
+    &__icon{
+        float: left;
+        width: 8%;
+    }
+
+    &__detail{
+        float: right;
+        width: 91%;
+    }
+    a{
+        color: $color-light_black;
+        font-size: $size-detail;
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+    }
+    tr { border: 1px solid $color-border; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid $color-border; 
+		position: relative;
+        padding-left: 60%;
+        font-size: $size-detail;
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 0;
+		left: 2px;
+		width: 45%; 
+		padding-right: $size-space; 
+		white-space: nowrap;
+    }
+    
+    td:nth-of-type(1):before { content: "STT"; }
+	td:nth-of-type(2):before { content: "MÃ HOÁ ĐƠN/NGÀY MUA HÀNG"; }
+	td:nth-of-type(3):before { content: "KHO NHẬN HÀNG"; }
+	td:nth-of-type(4):before { content: "SỐ SP"; }
+	td:nth-of-type(5):before { content: "TỔNG TIỀN"; }
+	td:nth-of-type(6):before { content: "TÌNH TRẠNG"; }
+	td:nth-of-type(7):before { content: "THAO TÁC"; }
+}
+
+@media screen and (min-width: 1000px){
+    .order{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        &_table{
+            order: 0;
+            flex-basis: 75%
+        }
+
+        &_customer{
+            margin-top: 2 * $size-space;
+            flex-basis: 24%
+        }
+    }
+    table{
+        width: 100%;
+        border-bottom: 1px solid $color-border;
+        overflow-x: scroll;
+
+        th{
+            border: 1px solid $color-border;
+            padding: $size-space;
+            padding: 1.5 * $size-space $size-space;
+        }
+        td{
+            text-align: center;
+            padding: 1.5 * $size-space $size-space;
+            border-left: 1px solid $color-border;
+            border-right: 1px solid $color-border;
+            font-size: $size-detail;
+            color: $color-light_black;
+
+            a{
+                color: $color-light_black;
+                font-size: $size-detail;
+            }
+
+            h5{
+                display: inline;
+                position: relative;
+
+                &::before{
+                    position: absolute;
+                    content: '01:36 14/03/2015';
+                    bottom: -12px;
+                    font-size: $size-small_detail;
+                }
+            }
+        }
+    }
+}

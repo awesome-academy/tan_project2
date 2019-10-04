@@ -1,0 +1,122 @@
+.banner{
+    display: none;
+}
+
+.side_bar{
+    &__item{
+        margin-bottom: $size-space;
+
+        ul,h3{
+            display: none;
+        }
+
+        &:first-child{
+            display: flex;
+            justify-content: space-between;
+
+            >a{
+                font-size: 25px;
+                color: $color-black;
+            }
+        }
+
+        p{
+            font-size: $size-detail;
+            color: $color-detail;
+            margin-top: $size-space;
+        }
+
+        img{
+            width: 100%;
+            display: none;
+        }
+    }
+}
+
+.sort_bar{
+    border: 1px solid $color-border;
+    padding: 8px $size-space;
+    @include flex;
+
+    &__view{
+        .fas{
+            margin-right: $size-space;
+            color: $color-time;
+        }
+        
+        .fa-th-list{
+            color: $color-yellow;
+        }
+    }
+
+    &__pagination{
+        ul{
+            @include flex;
+        }
+
+        a{
+            color: $color-time;
+            padding: 1px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .banner{
+        display: block;
+        height: 300px;
+        overflow: hidden;
+        margin-bottom: 2 * $size-space;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .side_bar{
+        flex-basis: 20%;
+        &__item{
+            ul,h3,a{
+                display: inline-block;
+                font-size: $size-detail;
+                color: $color-detail;
+                line-height: 1.2;
+            }
+
+            a{
+                &:hover{
+                    color: $color-yellow;
+                }
+            }
+
+            h3{
+                margin: 5px 0;
+            }
+    
+            &:first-child{
+                flex-direction: column;
+    
+                >a{
+                    display: none
+                }
+            }
+    
+            img{
+                display: block;
+            }
+        }
+    }
+
+    .content{
+        flex-basis: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .side_bar{
+        flex-basis: 263px;
+    }
+
+    .content{
+        flex-basis: 848px;
+    }
+}

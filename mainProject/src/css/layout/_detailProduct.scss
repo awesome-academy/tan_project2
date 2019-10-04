@@ -1,0 +1,142 @@
+.gallery{
+    margin-bottom: 2 * $size-space;
+    @include flex;
+    border: 1px solid $color-border;
+
+    img{
+        width: 100%;
+    }
+
+    &__list{
+        flex-basis: 15%;
+        text-align: center;
+    }
+
+    &__preview{
+        width: 85%;
+        border-left: 1px solid $color-border;
+    }
+}
+
+.text{
+    .rating{
+        margin: $size-space 0;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+        color: #737373;
+        font-size: 13px;
+        padding: 1.5 * $size-space 0;
+    }
+
+    .custom{
+        &_color{
+            .btn{
+                width: $size-btn_square;
+                height: $size-btn_square;
+                background-color: $color-yellow;
+
+                &:nth-child(2){
+                    background-color: $color-black;
+                }
+                &:nth-child(3){
+                    background-color: #9c0001;
+                }
+            }
+        }
+
+        &_param{
+            select{
+                height: $size-btn_square;
+                padding: 0 $size-space;
+            }
+        }
+
+        &_count{
+            .btn{
+                &:nth-child(1),&:nth-child(3){
+                    width: $size-btn_square;
+                    height: $size-btn_square;
+                }
+            }
+            span{
+                height: $size-btn_square;
+                width: 40px;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+    }
+
+    .title{
+        margin: $size-space 0;
+    }
+
+    .desc{
+        p{
+            font-size: 13px;
+            color: $color-dark_time;
+        }
+    }
+}
+
+.characteristics{
+    display: flex;
+    justify-content: space-between;
+    margin: 2 * $size-space 0;
+
+    &__img{
+        display: none;
+    }
+
+    &__content{
+        @include flex;
+        position: relative;
+
+        label{
+            font-size: $size-detail;
+            padding: 5px;
+            cursor: pointer;
+        }
+        p{
+            display: none;
+            font-size: 13px;
+        }
+        input{
+            display: none;
+
+            &:checked{
+                +label{
+                    background-color: $color-yellow;
+                }
+                ~p{
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    bottom: -2 * $size-space;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content{
+        display: flex;
+        justify-content: space-between;
+
+        .gallery{
+            flex-basis: 40%;
+        }
+
+        .text{
+            flex-basis: 58%;
+        }
+    }
+
+    .characteristics{
+        align-items: flex-start;
+        &__img{
+            display: block;
+        }
+    }
+}

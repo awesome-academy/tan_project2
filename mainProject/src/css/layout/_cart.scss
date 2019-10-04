@@ -1,0 +1,33 @@
+table{
+    width: 100%;
+    margin: 2 * $size-space 0;
+    overflow-x:auto;
+    background-color: #FAFAFA;
+    th{
+        border: 1px solid #333;
+        padding: $size-space 0;
+    }
+    tr{
+        td{
+            vertical-align: middle;
+            border: 1px solid #333;
+            text-align: center;
+            &:first-child{
+                width: 150px;
+
+                img{
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2n +1){
+                color: $color-yellow;
+            }
+        }
+    }
+}
+
+.cart_btn{
+    text-align: right;
+    margin-bottom: 2 * $size-space;
+}
