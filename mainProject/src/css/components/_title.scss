@@ -1,0 +1,22 @@
+.title{
+    &__block{
+        margin: 2 * $size-space auto;
+        font-size: 21px;
+        color: $color-black;
+        text-align: center;
+        padding-bottom: $size-space;
+        background-image: url(./../../images/title-dark.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
+    &__arrow{
+        font-size: 25px;
+        color: $color-black;
+        display: inline-block;
+        padding-bottom: 1.5 * $size-space;
+        background-image: url(./../../images/titleleft-dark.png);
+        background-repeat: no-repeat;
+        background-position: left bottom;
+    }
+}

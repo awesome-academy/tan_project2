@@ -1,0 +1,352 @@
+{
+    "products": [
+        {
+            "id": "product1",
+            "productName": "RƯỢU VANG 1",
+            "productNameE": "RUOU VANG 1",
+            "price": 300000,
+            "image": "1.jpg",
+            "optionImg": [
+                "1.jpg",
+                "3.jpg",
+                "8.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 1 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 1,
+            "new": true,
+            "rating": 2,
+            "view": 10,
+            "comment": []
+        },
+        {
+            "id": "product2",
+            "productName": "RƯỢU VANG 2",
+            "productNameE": "RUOU VANG 2",
+            "price": 320000,
+            "image": "2.jpg",
+            "optionImg": [
+                "2.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 2 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 12,
+            "new": true,
+            "rating": 2,
+            "view": 30,
+            "comment": []
+        },
+        {
+            "id": "product3",
+            "productName": "RƯỢU VANG 3",           
+            "productNameE": "RUOU VANG 3",
+            "price": 360000,
+            "image": "3.jpg",
+            "optionImg": [
+                "3.jpg",
+                "14.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 3 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 20,
+            "new": false,
+            "rating": 2,
+            "view": 40,
+            "comment": []
+        },
+        {
+            "id": "product4",
+            "productName": "RƯỢU VANG 4",
+            "productNameE": "RUOU VANG 4",
+            "price": 340000,
+            "image": "4.jpg",
+            "optionImg": [
+                "4.jpg",
+                "3.jpg",
+                "9.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 4 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 14,
+            "new": false,
+            "rating": 2,
+            "view": 30,
+            "comment": []
+        },
+        {
+            "id": "product5",
+            "productName": "RƯỢU VANG 5",
+            "productNameE": "RUOU VANG 5",
+            "price": 350000,
+            "image": "5.jpg",
+            "optionImg": [
+                "5.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "12.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 5 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 30,
+            "new": true,
+            "rating": 3,
+            "view": 100,
+            "comment": []
+        },
+        {
+            "id": "product6",
+            "productName": "RƯỢU VANG 6",
+            "productNameE": "RUOU VANG 6",
+            "price": 370000,
+            "image": "6.jpg",
+            "optionImg": [
+                "6.jpg",
+                "3.jpg",
+                "4.jpg",
+                "7.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 6 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 10,
+            "new": true,
+            "rating": 1,
+            "view": 48,
+            "comment": []
+        },
+        {
+            "id": "product7",
+            "productName": "RƯỢU VANG 7",
+            "productNameE": "RUOU VANG 7",
+            "price": 370000,
+            "image": "7.jpg",
+            "optionImg": [
+                "7.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 1,
+            "decription": "RƯỢU VANG 7 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 26,
+            "new": false,
+            "rating": 1,
+            "view": 44,
+            "comment": []
+        },
+        {
+            "id": "product8",
+            "productName": "RƯỢU NGOẠI 1",
+            "productNameE": "RUOU NGOAI 1",
+            "price": 330000,
+            "image": "8.jpg",
+            "optionImg": [
+                "8.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 1 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 19,
+            "new": true,
+            "rating": 4,
+            "view": 80,
+            "comment": []
+        },
+        {
+            "id": "product9",
+            "productName": "RƯỢU NGOẠI 2",
+            "productNameE": "RUOU NGOAI 2",
+            "price": 330000,
+            "image": "9.jpg",
+            "optionImg": [
+                "9.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 2 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 11,
+            "new": true,
+            "rating": 4,
+            "view": 88,
+            "comment": []
+        },
+        {
+            "id": "product10",
+            "productName": "RƯỢU NGOẠI 3",
+            "productNameE": "RUOU NGOAI 3",
+            "price": 300000,
+            "image": "10.jpg",
+            "optionImg": [
+                "10.jpg",
+                "3.jpg",
+                "4.jpg",
+                "14.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 3 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 17,
+            "new": false,
+            "rating": 4,
+            "view": 78,
+            "comment": []
+        },
+        {
+            "id": "product11",
+            "productName": "RƯỢU NGOẠI 4",
+            "productNameE": "RUOU NGOAI 4",
+            "price": 390000,
+            "image": "11.jpg",
+            "optionImg": [
+                "11.jpg",
+                "3.jpg",
+                "4.jpg",
+                "9.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 4 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 19,
+            "new": false,
+            "rating": 4,
+            "view": 118,
+            "comment": []
+        },
+        {
+            "id": "product12",
+            "productName": "RƯỢU NGOẠI 5",
+            "productNameE": "RUOU NGOAI 5",
+            "price": 330000,
+            "image": "12.jpg",
+            "optionImg": [
+                "12.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "10.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 5 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 22,
+            "new": true,
+            "rating": 3,
+            "view": 139,
+            "comment": []
+        },
+        {
+            "id": "product13",
+            "productName": "RƯỢU NGOẠI 6",
+            "productNameE": "RUOU NGOAI 6",
+            "price": 370000,
+            "image": "13.jpg",
+            "optionImg": [
+                "13.jpg",
+                "3.jpg",
+                "4.jpg",
+                "9.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 6 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 19,
+            "new": true,
+            "rating": 2,
+            "view": 111,
+            "comment": []
+        },
+        {
+            "id": "product14",
+            "productName": "RƯỢU NGOẠI 7",
+            "productNameE": "RUOU NGOAI 7",
+            "price": 320000,
+            "image": "9.jpg",
+            "optionImg": [
+                "9.jpg",
+                "3.jpg",
+                "4.jpg",
+                "6.jpg",
+                "5.jpg"
+            ],
+            "idCategory": 2,
+            "decription": "RƯỢU ngoai 7 Một hợp chất có trong rượu vang được gọi là resveratro có khả năng làm tăng tối đa tuổi thọ. Resveratro còn có khả năng ngăn chặn mật độ ôxy hoá của protein béo.",
+            "sold": 39,
+            "new": false,
+            "rating": 3,
+            "view": 139,
+            "comment": []
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "categoryName": "Rượu Vang"
+        },
+        {
+            "id": 2,
+            "categoryName": "Rượu Ngoại"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "firstName": "Nguyen",
+            "lastName": "Tan",
+            "email": "tan120796@gmail.com",
+            "password": "123456",
+            "role": 1
+        }
+    ],
+    "roles": [
+        {
+            "id": 1,
+            "nameRole": "admin"
+        },
+        {
+            "id": 2,
+            "nameRole": "user"
+        }
+    ],
+    "status": [
+        {
+            "id": 3,
+            "statusName": "delivered"
+        },
+        {
+            "id": 4,
+            "statusName": "canceled"
+        }
+    ],
+    "orders": [
+        {
+            "id": 2,
+            "idUser": "588",
+            "productList": [
+                {
+                    "productId": 2,
+                    "quantity": 5,
+                    "day": "26/6/2019"
+                }
+            ],
+            "total": 1000000
+        }
+    ]
+}
