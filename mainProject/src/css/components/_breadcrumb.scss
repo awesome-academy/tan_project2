@@ -1,0 +1,18 @@
+.breadcrumb{
+    overflow: hidden;
+    margin: 2* $size-space auto;
+
+    li{
+        float: left;
+        &:last-child{
+            a{
+                color: $color-yellow;
+            }
+        }
+    }
+
+    a{
+        font-size: $size-detail;
+        color: $color-detail;
+    }
+}
