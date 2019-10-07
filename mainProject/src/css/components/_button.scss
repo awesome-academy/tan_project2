@@ -1,0 +1,31 @@
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+
+    &__cart{
+        font-size: $size-small_detail;
+        color: $color-white;
+        background: $color-black;
+        padding: $size-space 1.5 * $size-space;
+    }
+
+    &__list{
+        background-color: $color-white;
+        color: $color-detail;
+        border: 1px solid $color-border;
+        margin: 3px 0;
+
+        &:hover{
+            color: $color-white;
+            background-color: $color-yellow;
+        }
+    }
+
+    &__more{
+        background-color: transparent;
+        color: $color-dark_time;
+        padding-left: 0;
+    }
+}
