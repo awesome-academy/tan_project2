@@ -23,10 +23,10 @@ class Footer extends React.Component {
                             <ul>
                                 <li>
                                     <Link to="/" >VỀ CHÚNG TÔI</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >GIAO HÀNG</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >CẢM NGHĨ</Link>
                                 </li>
@@ -45,19 +45,19 @@ class Footer extends React.Component {
                             <ul>
                                 <li>
                                     <Link to="/" >VẬN CHUYỂN VÀ TRA HÀNG</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >MUA HÀNG AN TOÀN</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >VẬN CHUYỂN QUỐC TẾ</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >LIÊN KẾT</Link>
-                                    </li>
+                                </li>
                                 <li>
                                     <Link to="/" >DỊCH VỤ GIẢM GIÁ</Link>
-                                    </li>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -72,7 +72,7 @@ class Footer extends React.Component {
                             <FontAwesomeIcon icon={['fab', 'twitter']} />
                             <FontAwesomeIcon icon={['fab', 'google-plus-g']} />
                             <FontAwesomeIcon icon={['fab', 'linkedin-in']} />
-                            <FontAwesomeIcon icon={ faWifi }/>
+                            <FontAwesomeIcon icon={faWifi} />
                         </div>
                     </div>
                     <div className="footer_content__item">

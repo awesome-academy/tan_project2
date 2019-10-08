@@ -1,15 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { getProductDetail } from '../../../../redux/actions';
 
 class Card extends React.Component {
-
+    onProductDetail(id, idCategory) {
+        this.props.GetProductDetail(id, idCategory)
+    }
     render() {
-        const {productName, image, price} = this.props.productInfo;
+        const {productName, image, price, id, idCategory} = this.props.productInfo;
         const priceString = price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
         const oldPriceString = (price + 50000).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
         return (
             <div className="product__item">
-                <Link to="/" className="product__img">
+                <Link to="/productDetail" className="product__img" onClick={this.onProductDetail.bind(this, id, idCategory)}>
                     <div className="product__interactive">
                         <button className="btn btn__cart" type="button"><i className="fas fa-heart" />&nbsp; Yêu thích</button>
                         <button className="btn btn__cart" type="button"> <i className="fas fa-signal" />&nbsp; So sánh</button>
@@ -29,4 +33,10 @@ class Card extends React.Component {
     };
 }
 
-export default Card;
+const mapDispatchToProps = dispatch => {
+    return {
+        GetProductDetail: (id, idCategory) => dispatch(getProductDetail(id, idCategory))
+    }
+}
+
+export default connect(null, mapDispatchToProps) (Card);
