@@ -5,7 +5,10 @@ class SliderContent extends React.Component {
 
 
     render() {
-        let cardList = this.props.products.map((product, index) => <Card key={product.productName + index} productInfo={product}></Card>);
+        let cardList;
+        if(this.props.products){
+            cardList = this.props.products.map((product, index) => <Card key={product.productName + index} productInfo={product}></Card>);
+        }
         return (
             <>
                 {cardList}

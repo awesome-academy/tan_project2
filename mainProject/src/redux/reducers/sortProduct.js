@@ -1,10 +1,10 @@
-const role = (state = "USERS", action) => {
+const productSort = (state = "az", action) => {
     switch (action.type) {
-        case 'HANDLE_ROLE':
+        case 'SORT_PRODUCTS':
             return action.data
         default:
             return state
     }
 }
 
-export default role
+export default productSort
