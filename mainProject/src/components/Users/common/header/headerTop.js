@@ -1,9 +1,16 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faSearch, faSignOutAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { connect } from 'react-redux';
+import { setProfile } from '../../../../redux/actions';
 
 class HeaderTop extends React.Component {
+
+    SetProfile = () => {
+        sessionStorage.setItem("user", JSON.stringify({}));
+        this.props.SetProfile({});
+    }
 
     render() {
         return (
@@ -11,18 +18,24 @@ class HeaderTop extends React.Component {
                 <div className="container">
                     <nav>
                         <ul>
-                            <li><Link to="/profile">Tài khoản của tôi</Link ></li>
-                            <li><Link to="/order">Trạng thái đơn hàng</Link ></li>
+                            {!this.props.Profile.id ? null : <li><Link to="/profile">Tài khoản của tôi</Link ></li>}
                             <li><Link to="/">Danh sách ưa thích</Link ></li>
                             <li><Link to="/cart">Giỏ hàng</Link ></li>
-                            <li><Link to="/login">Đăng nhập</Link ></li>
-                            <li><Link to="/register">Đăng kí</Link ></li>
+                            {this.props.Profile.id ?
+                                <>
+                                    <li><Link to="/profile"> <FontAwesomeIcon icon={faUser}></FontAwesomeIcon> {this.props.Profile.id}</Link ></li>
+                                    <li><Link to="/" onClick={this.SetProfile}> <FontAwesomeIcon icon={faSignOutAlt}></FontAwesomeIcon> Logout</Link ></li>
+                                </> :
+                                <>
+                                    <li><Link to="/login">Đăng nhập</Link ></li>
+                                    <li><Link to="/register">Đăng kí</Link ></li>
+                                </>}
                         </ul>
                     </nav>
                     <nav>
                         <ul>
-                            <li><Link to="/">Đăng nhập</Link ></li>
-                            <li><Link to="/">Đăng kí</Link ></li>
+                        {this.props.Profile.id ? <li><Link to="/profile">Tài khoản của tôi</Link ></li> : <><li><Link to="/login">Đăng nhập</Link ></li>
+                            <li><Link to="/register">Đăng kí</Link ></li></>}
                         </ul>
                     </nav>
                     <div className="header_top__search">
@@ -37,4 +50,16 @@ class HeaderTop extends React.Component {
     };
 }
 
-export default HeaderTop;
+const mapStateToProps = state => {
+    return {
+        Profile: state.profile
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        SetProfile: (data) => dispatch(setProfile(data))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps) (HeaderTop);

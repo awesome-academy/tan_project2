@@ -76,7 +76,82 @@ export const productDetail = (data) => ({
 })
 // product detail
 
+export const setProfile = (data) => ({
+    type: 'PROFILE',
+    data: data
+})
+
+// profile
+
 export const loadingPage = (data) => ({
     type: 'LOADING',
+    data: data
+})
+//loadingPage
+
+export const setCart = (data) => ({
+    type: 'CART',
+    data: data
+})
+//set Cart
+
+export const setStepCheckout = (data) => ({
+    type: 'CHECKOUT_STEP',
+    data: data
+})
+// step checkout
+
+export const getUsersAsync = () => {
+    return (dispatch) => {
+        dispatch(loadingPage(true));
+        axios.get(`http://localhost:3000/users`)
+            .then(function (res) {
+                dispatch(getUsers(res.data));
+                dispatch(loadingPage(false));
+            })
+            .catch((err) => console.log(err))
+    }
+}
+
+export const getUsers = (data) => ({
+    type: "ALL_USERS",
+    data: data
+})
+// Get Users
+
+export const deleteUserAsync = (id,arr,index) => {
+    return (dispatch) => {
+        dispatch(loadingPage(true));
+        axios.delete(`http://localhost:3000/users/${id}`)
+            .then(() => {
+                console.log(arr)
+                arr.splice(index,1);
+                console.log(arr)
+                dispatch(getUsers(arr));
+                dispatch(loadingPage(false));
+            })
+    }
+}
+// delete User
+
+export const getOrder = (data) => ({
+    type: "ALL_ORDER",
+    data: data
+})
+
+export const getOrderAsync = () => {
+    return (dispatch) => {
+        dispatch(loadingPage(true));
+        axios.get(`http://localhost:3000/orders/`)
+        .then((res) => {
+            dispatch(loadingPage(false));
+            dispatch(getOrder(res.data))
+        })
+    }
+}
+// get orders
+
+export const filterOrder = (data) => ({
+    type: "FILTER_ORDER",
     data: data
 })

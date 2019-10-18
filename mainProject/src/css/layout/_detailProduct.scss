@@ -1,0 +1,193 @@
+.gallery{
+    margin-bottom: 2 * $size-space;
+    @include flex;
+    border: 1px solid $color-border;
+
+    img{
+        width: 100%;
+    }
+
+    &__list{
+        flex-basis: 15%;
+        text-align: center;
+    }
+
+    &__preview{
+        width: 85%;
+        border-left: 1px solid $color-border;
+    }
+}
+
+.text{
+    .rating{
+        margin: $size-space 0;
+        border-top: 1px solid $color-border;
+        border-bottom: 1px solid $color-border;
+        color: #737373;
+        font-size: 13px;
+        padding: 1.5 * $size-space 0;
+
+        span{
+            color: $color-yellow;
+
+            &.rating_active~span{
+                color: $color-border;
+            }
+        }
+    }
+
+    .custom{
+        &_color{
+            .btn{
+                width: $size-btn_square;
+                height: $size-btn_square;
+                background-color: $color-yellow;
+
+                &:nth-child(2){
+                    background-color: $color-black;
+                }
+                &:nth-child(3){
+                    background-color: #9c0001;
+                }
+            }
+        }
+
+        &_param{
+            select{
+                height: $size-btn_square;
+                padding: 0 $size-space;
+            }
+        }
+
+        &_count{
+            .btn{
+                &:nth-child(1),&:nth-child(3){
+                    width: $size-btn_square;
+                    height: $size-btn_square;
+                }
+            }
+            span{
+                height: $size-btn_square;
+                width: 40px;
+                text-align: center;
+                display: inline-block;
+            }
+        }
+    }
+
+    .title{
+        margin: $size-space 0;
+    }
+
+    .desc{
+        p{
+            font-size: 13px;
+            color: $color-dark_time;
+        }
+    }
+}
+
+.characteristics{
+    display: flex;
+    justify-content: space-between;
+    margin: 2 * $size-space 0;
+
+    &__img{
+        display: none;
+    }
+
+    &__content{
+        &>input,
+        section>div {
+            display: none;
+        }
+
+        #tab1:checked ~ section>.tab1,
+        #tab2:checked ~ section>.tab2,
+        #tab3:checked ~ section>.tab3 {
+        display: block;
+        }
+
+        #tab1:checked ~ nav .tab1,
+        #tab2:checked ~ nav .tab2,
+        #tab3:checked ~ nav .tab3 {
+        color: red;
+        }
+
+        li {
+            label {
+                float: left;
+                padding: 15px 25px;
+                border: 1px solid #ddd;
+                border-bottom: 0;
+                background: $unactiveColor;
+                color: #444;
+                &:hover {
+                    background: $unactiveHoverColor;
+                }
+                &:active {
+                    background: $activeColor;
+                }
+                }
+                &:not(:last-child) label {
+                border-right-width: 0; 
+            }
+        }
+
+        section {
+            clear: both;
+
+            div {
+                padding: 20px; 
+                width: 100%;
+                border: 1px solid #ddd;
+                background: #fff;
+                line-height: 1.5em;
+                letter-spacing: 0.3px;
+                color: #444;
+            }
+        }
+
+        #tab1:checked ~ nav .tab1,
+        #tab2:checked ~ nav .tab2,
+        #tab3:checked ~ nav .tab3 {
+            label {
+            background: white;
+            color: #111;
+            position: relative;
+            &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+            background: $activeColor;
+            left: 0;
+            bottom: -1px;
+        }
+    }
+}
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content_detail{
+        display: flex;
+        justify-content: space-between;
+
+        .gallery{
+            flex-basis: 40%;
+        }
+
+        .text{
+            flex-basis: 58%;
+        }
+    }
+
+    .characteristics{
+        align-items: flex-start;
+        &__img{
+            display: block;
+        }
+    }
+}
