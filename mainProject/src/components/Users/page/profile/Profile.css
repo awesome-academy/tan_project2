@@ -1,0 +1,81 @@
+.Profile .title {
+    padding: 30px 30px 30px 0;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 40px;
+}
+
+.Profile .title div {
+    width: 80%;
+    margin: auto;
+}
+
+.Profile .title p {
+    color: #E6AE48;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.Profile input {
+    width: 250px;
+    padding: 5px;
+}
+
+.Profile .name,
+.Profile .phone,
+.Profile .addr,
+.Profile .email,
+.Profile .pw {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.Profile .name div,
+.Profile .phone div,
+.Profile .addr div,
+.Profile .email div,
+.Profile .pw div {
+    display: inline-block;
+}
+
+.Profile .name div:first-child,
+.Profile .phone div:first-child,
+.Profile .addr div:first-child,
+.Profile .email div:first-child,
+.Profile .pw div:first-child {
+    width: 20%;
+}
+
+.Profile button {
+    background: #286090;
+    color: white;
+    padding: 7.5px 8.5px;
+    border: 1px solid rgb(202, 202, 202);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.Profile .changepw {
+    background: none;
+    border: none;
+    color: rgb(30, 116, 173);
+    padding: 0;
+    font-size: 0.9em;
+    width: 200px;
+    text-align: left
+}
+
+.Profile .pw button i {
+    margin-right: 10px;
+}
+
+.Profile .pw button {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.Profile span {
+    font-size: 0.8em;
+    color: red;
+    margin-left: 20px;
+}

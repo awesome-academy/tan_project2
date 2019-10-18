@@ -12,7 +12,7 @@ class Footer extends React.Component {
                 <div className="footer_top">
                     <div className="container">
                         <div className="footer_top__item">
-                            <img src="./images/Layer 511X.png" alt="img511" />
+                            <img src="/images/Layer 511X.png" alt="img511" />
                         </div>
                     </div>
                 </div>

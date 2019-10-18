@@ -31,7 +31,7 @@ class HeaderBottom extends React.Component {
             <div className="header_bottom">
                 <div className="container">
                     <Link to="/" className="header_bottom__logo">
-                        <img src="./images/logoooo.png" alt="logo" />
+                        <img src="/images/logoooo.png" alt="logo" />
                     </Link >
                     <Link to="/" className="header_bottom__toggle" >
                         <FontAwesomeIcon icon={faBars}/>

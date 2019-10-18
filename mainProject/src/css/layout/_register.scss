@@ -1,0 +1,80 @@
+.regis{
+    margin-bottom: 2 * $size-space;
+
+    &__heading{
+        @include flex;
+        margin-bottom: 1.5 * $size-space;
+    }
+
+    &__title{
+        font-size: $size-title;
+        color: $color-black;
+        margin-bottom: 1.5 * $size-space;
+    }
+
+    form.form_top{
+        div{
+            margin-bottom: 2 * $size-space;
+            @include flex;
+
+            label{
+                flex-basis: 20%;
+            }
+
+            input{
+                flex-basis: 78%;
+                padding: $size-space_small $size-space;
+                border: 1px solid $color-border;
+            }
+
+            label,p{
+                color: $color-black;
+                font-size: $size-detail;
+
+                span{
+                    color: red
+                }
+            }
+        }
+    }
+
+    form.form_bottom{
+        div{
+            @include flex;
+            margin-bottom: 2 * $size-space;
+
+            label{
+                flex-basis: 20%;
+            }
+
+            input{
+                flex-basis: 78%;
+                padding: $size-space_small $size-space;
+                border: 1px solid $color-border;
+            }
+
+            label{
+                span{
+                    color: red
+                }
+            }
+
+            &:last-child{
+                justify-content: flex-end;
+
+                button{
+                    margin-left: $size-space;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .regis{
+        &__content{
+            border: 1px solid $color-border;
+            padding: 5 * $size-space;
+        }
+    }
+}

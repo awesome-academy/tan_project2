@@ -4,17 +4,18 @@ import Users from './components/Users';
 import { connect } from 'react-redux';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
+import AdminPage from './components/Admin';
 library.add(fab)
 
 class App extends React.Component {
 
     render() {
         let contentApp;
-        if (this.props.Role === "USERS") {
-            contentApp = <Users></Users>
+        if (this.props.Profile.role === 1) {
+            contentApp = <AdminPage></AdminPage>
         }
         else {
-            contentApp = 'Admin'
+            contentApp = <Users></Users>
         }
 
         return (
@@ -27,7 +28,7 @@ class App extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        Role: state.role
+        Profile: state.profile
     }
 }
 
